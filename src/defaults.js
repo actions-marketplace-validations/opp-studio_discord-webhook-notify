@@ -28,11 +28,10 @@ export const longSeverity = {
  */
 export async function getDefaultDescription() {
   const context = github.context;
-  console.log("DEBUG: getDefaultDescription() called with context: ", context);
   return (
-    `- **Repository:** [${context.repository}](${context.repositoryUrl})\n` +
+    `- **Repository:** [${context.repo.repo}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo})\n` +
     `- **Workflow:** ${context.workflow}\n` +
     `- **Event:** ${context.eventName}\n` +
-    `- **Triggering Actor:** ${context.triggering_actor}\n`
+    `- **Triggering Actor:** ${context.actor}\n`
   );
 }
