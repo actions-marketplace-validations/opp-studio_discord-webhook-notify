@@ -8,7 +8,7 @@ import * as github from "@actions/github";
 export const lockfileName = "discord-webhook-lastrun-time.lock";
 export const holddownTime = 3000; // ms
 export const avatarUrl =
-  "https://cdn.jsdelivr.net/gh/rjstone/discord-webhook-notify@main/img/default_avatar.png";
+  "https://cdn.jsdelivr.net/gh/RavenX8/discord-webhook-notify@main/img/default_avatar.png";
 export const username = "Notification (GitHub)";
 export const colors = {
   info: "#00ff00",
@@ -29,9 +29,9 @@ export const longSeverity = {
 export async function getDefaultDescription() {
   const context = github.context;
   return (
-    `- **Repository:** [${github.repository}](${github.repositoryUrl})\n` +
+    `- **Repository:** [${context.repository}](${context.repositoryUrl})\n` +
     `- **Workflow:** ${context.workflow}\n` +
     `- **Event:** ${context.eventName}\n` +
-    `- **Triggering Actor:** ${github.triggering_actor}\n`
+    `- **Triggering Actor:** ${context.triggering_actor}\n`
   );
 }

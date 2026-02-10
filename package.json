@@ -1,17 +1,17 @@
 {
   "name": "discord-webhook-notify",
   "description": "GitHub Action to send notifications to Discord using a webhook.",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "author": "rjstone@github",
   "type": "module",
   "private": false,
-  "homepage": "https://github.com/rjstone/discord-webhook-notify",
+  "homepage": "https://github.com/RavenX8/discord-webhook-notify",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rjstone/discord-webhook-notify.git"
+    "url": "git+https://github.com/RavenX8/discord-webhook-notify.git"
   },
   "bugs": {
-    "url": "https://github.com/rjstone/discord-webhook-notify/issues"
+    "url": "https://github.com/RavenX8/discord-webhook-notify/issues"
   },
   "keywords": [
     "actions",
