@@ -1,7 +1,7 @@
 {
   "name": "discord-webhook-notify",
   "description": "GitHub Action to send notifications to Discord using a webhook.",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "author": "rjstone@github",
   "type": "module",
   "private": false,
@@ -22,7 +22,7 @@
     ".": "./dist/index.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
