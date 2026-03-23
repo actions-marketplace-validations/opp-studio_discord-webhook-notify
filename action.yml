@@ -1,5 +1,5 @@
-name: Discord Webhook Notify Updated!
-author: ai5-ci
+name: Discord Webhook Notify continued
+author: ai5
 description: >
   Send notifications to Discord using a webhook.
   Works with all execution environments including windows, macos, and linux.
